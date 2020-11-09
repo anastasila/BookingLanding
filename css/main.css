@@ -46,14 +46,14 @@
 
 h1 {
   font-family: "Quicksand", "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   color: #1f2041;
 }
 
 h2 {
   font-family: "Quicksand", "Open Sans", sans-serif;
-  font-size: 19px;
+  font-size: 0.75rem;
   line-height: 24px;
   color: #1f2041;
 }
@@ -62,7 +62,7 @@ h3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
@@ -90,7 +90,7 @@ body a {
   font-family: Montserrat;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: 0.8125rem;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
@@ -140,6 +140,7 @@ header {
 }
 
 .btn {
+  display: block;
   font-weight: bold;
   text-transform: uppercase;
   color: #bc9cff;
@@ -147,7 +148,6 @@ header {
   border: 3px solid;
   border-image: linear-gradient(#bc9cff, #8ba4f9);
   border-image-slice: 1;
-  display: block;
   padding: 8px 22px;
   margin-left: 15px;
 }
