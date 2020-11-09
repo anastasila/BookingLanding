@@ -28,6 +28,22 @@
     url("../fonts/Montserrat-Bold.svg#webfont") format("svg");
 }
 
+@media (min-width: 1920px) {
+  .full-screen {
+    width: 50vw;
+    margin-left: 50%;
+  }
+  .full-screen > div {
+    width: 100vw;
+    margin-left: -100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: "Quicksand", "Open Sans", sans-serif;
   font-size: 24px;
@@ -63,6 +79,12 @@ a {
   text-decoration: none;
 }
 
+div {
+  box-sizing: border-box;
+  margin: 0px auto;
+  background-size: 100%;
+}
+
 body p,
 body a {
   font-family: Montserrat;
@@ -82,14 +104,18 @@ body {
   margin-left: 30px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
+header {
   background: #fff;
   margin-top: 60px;
   padding-top: 15px;
   padding-left: 140px;
   padding-bottom: 15px;
+  box-shadow: 0.4em 0.4em 20px rgba(31, 32, 65, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 .header img {
@@ -107,4 +133,21 @@ body {
 
 .menu li {
   margin-right: 40px;
+}
+
+.about {
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border-radius: 22px;
+  border: 3px solid;
+  border-image: linear-gradient(#bc9cff, #8ba4f9);
+  border-image-slice: 1;
+  display: block;
+  padding: 8px 22px;
+  margin-left: 15px;
 }
