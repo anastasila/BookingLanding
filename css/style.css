@@ -31,24 +31,24 @@ h6 {
 }
 
 h1 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Montserrat-Bold";
+  /* font-size: 1.5rem; */
   line-height: 30px;
   color: #1f2041;
 }
 
 h2 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.75rem;
+  font-family: "Montserrat-Bold";
+  /* font-size: 0.75rem; */
   line-height: 24px;
   color: #1f2041;
 }
 
 h3 {
-  font-family: "Montserrat-Bold", sans-serif;
+  font-family: "Montserrat-Bold";
   font-style: normal;
-  font-weight: bold;
-  font-size: 0.75rem;
+  font-weight: 700;
+  /* font-size: 0.75rem; */
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
@@ -76,9 +76,9 @@ div {
 body p,
 body a {
   font-family: "Montserrat-Regular", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  font-size: 0.8125rem;
+  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
@@ -88,11 +88,11 @@ body {
 }
 
 .logo {
-  margin-top: 30px;
   margin-left: 30px;
 }
 
-header {
+header,
+footer {
   background: #fff;
   margin-top: 60px;
   padding-top: 15px;
@@ -110,13 +110,14 @@ header {
   width: 105.69px;
 }
 
-.menu {
+.menu__list {
   display: flex;
   padding-left: 280px;
 }
 
 .menu li a {
   font-size: 14px;
+  /* color: rgba(31, 32, 65, 0.5); */
 }
 
 .menu li {
@@ -125,6 +126,7 @@ header {
 
 .about {
   font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .btn {
