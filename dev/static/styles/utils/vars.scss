@@ -1,0 +1,35 @@
+// Colors
+$title-color: #1F2041;
+$text-color: rgba(31, 32, 65, 0.75);
+$light-tc: rgba(31, 32, 65, 0.5);
+$super-light-tc:  rgba(31, 32, 65, 0.25);
+$light-bg-color: rgba(31, 32, 65, 0.05);
+$accent-purple: #BC9CFF;
+$accent-green: #6FCF97;
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "xs-phone"    : 320px,
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1920px;
+
+// Fonts
+$bold: "Montserrat-Bold", sans-serif;
+$regular: "Montserrat-Regular", sans-serif;
+
+%title {
+  font-family: $bold;
+  color: $title-color;
+}
+

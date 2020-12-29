@@ -1,0 +1,12 @@
+// header { flex: 0 0 auto; }
+.header-block {
+    margin: 15px 0;
+}
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu-list {
+    display: flex;
+}

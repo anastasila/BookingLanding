@@ -1,0 +1,15 @@
+header#header
+    .container.clearfix
+        .header-block
+            a.header__logo-link(href="#")
+                img.header__logo-img(src="static/images/general/logo-color.svg", alt="")
+                nav.header__menu
+                    ul.header__menu-list
+                        each title in ["О нас", "Услуги", "Вакансии", "Новости", "Соглашения"]
+                            li.header__menu-item
+                                a.header__menu-link(href="#")= title
+                .header__login-section
+                    a.enter-btn(href="#") Войти
+                    a.reg-btn(href="#") Зарегистрироваться
+
+                
