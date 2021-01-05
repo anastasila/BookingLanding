@@ -1,3 +1,7 @@
+#header {
+    box-shadow: $shadow;
+}
+
 .header-block {
   margin: 15px 0;
 }
@@ -6,6 +10,16 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.header__logo-link {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.header__menu {
+    margin-right: 25px;
+}
+
 .header__menu-list {
   display: flex;
   justify-content: space-between;
@@ -32,17 +46,4 @@
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 20px;
-}
-
-.header__logo-link {
-  flex-shrink: 0;
-}
-
-.header__login-section button {
-  font-family: $regular;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 0.75rem;
-  border-radius: 22px;
-  text-transform: uppercase;
 }

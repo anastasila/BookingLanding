@@ -1,3 +1,16 @@
+button {
+  font-family: $regular;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.75rem;
+  border-radius: 22px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 #white-btn {
   padding: 6px 18px;
   position: relative;
@@ -19,7 +32,7 @@
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
     background: linear-gradient(#bc9cff, #8ba4f9);
-    border-color: #fff;
+    // border-color: #fff;
   }
 }
 
@@ -27,6 +40,6 @@
   color: #fff;
   background-image: linear-gradient(#bc9cff, #8ba4f9);
   border: none;
-  border: 2px solid;
+  // border: 2px solid;
   padding: 9px 20px;
 }

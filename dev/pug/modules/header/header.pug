@@ -19,8 +19,8 @@ header#header
                     +menu-item("Вакансии")
                     +menu-item("Новости")
                     +menu-item-list("Соглашения")(class="menu-link-list")
-            .header__login-section
-                button#white-btn(href="#") Войти
-                button#gradient-btn(href="#") Зарегистрироваться
-
+            block user-login
+                .header__login-section
+                    button#white-btn(name="enter-button") Войти
+                    button#gradient-btn(name="reg-button") Зарегистрироваться
                 
