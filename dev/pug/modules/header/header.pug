@@ -1,15 +1,26 @@
+mixin menu-item(title)
+     li.header__menu-item
+        a.header__menu-link(href="#")&attributes(attributes)= title
+
+mixin menu-item-list(title)
+     li.header__menu-item
+        a.header__menu-link(href="#")&attributes(attributes)= title
+            i.material-icons expand_more
+
 header#header
     .container.clearfix
         .header-block
             a.header__logo-link(href="#")
                 img.header__logo-img(src="static/images/general/logo-color.svg", alt="")
-                nav.header__menu
-                    ul.header__menu-list
-                        each title in ["О нас", "Услуги", "Вакансии", "Новости", "Соглашения"]
-                            li.header__menu-item
-                                a.header__menu-link(href="#")= title
-                .header__login-section
-                    a.enter-btn(href="#") Войти
-                    a.reg-btn(href="#") Зарегистрироваться
+            nav.header__menu
+                ul.header__menu-list
+                    +menu-item("О нас")(class="menu-link-accent")
+                    +menu-item-list("Услуги")(class="menu-link-list")
+                    +menu-item("Вакансии")
+                    +menu-item("Новости")
+                    +menu-item-list("Соглашения")(class="menu-link-list")
+            .header__login-section
+                button#white-btn(href="#") Войти
+                button#gradient-btn(href="#") Зарегистрироваться
 
                 

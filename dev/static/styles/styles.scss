@@ -2,7 +2,7 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-@import "utils/font-styles.scss"; 
+@import "utils/font-styles.scss";
 
 html {
   font-size: $base-font-size;
@@ -110,12 +110,6 @@ button {
   flex: 1 0 auto;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: $content-size;
-  width: 100%;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
@@ -124,3 +118,5 @@ button {
 
 //Модули
 @import "modules/modules";
+
+@import "utils/media.scss";
