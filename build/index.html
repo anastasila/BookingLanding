@@ -14,14 +14,14 @@
     <div class="wrapper">
       <header id="header">
         <div class="container clearfix">
-          <div class="header-block"><a class="header__logo-link" href="#"><img class="header__logo-img" src="static/images/general/logo-color.svg" alt=""></a>
+          <div class="header-block"><a class="logo-link" href="#"><img class="logo-img" src="static/images/general/logo-color.svg" alt=""/></a>
             <nav class="header__menu">
               <ul class="header__menu-list">
-                      <li class="header__menu-item"><a class="header__menu-link menu-link-accent" href="#">О нас</a></li>
-                      <li class="header__menu-item"><a class="header__menu-link menu-link-list" href="#">Услуги<i class="material-icons">expand_more</i></a></li>
-                      <li class="header__menu-item"><a class="header__menu-link" href="#">Вакансии</a></li>
-                      <li class="header__menu-item"><a class="header__menu-link" href="#">Новости</a></li>
-                      <li class="header__menu-item"><a class="header__menu-link menu-link-list" href="#">Соглашения<i class="material-icons">expand_more</i></a></li>
+                <li class="header__menu-item"><a class="header__menu-link menu-link-accent" href="/about">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link menu-link-list" href="/services">Услуги<i class="material-icons">expand_more</i></a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/career">Вакансии</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="/news">Новости</a></li>
+                <li class="header__menu-item"><a class="header__menu-link menu-link-list" href="/conventions">Соглашения<i class="material-icons">expand_more</i></a></li>
               </ul>
             </nav>
             <div class="header__login-section">
@@ -33,7 +33,53 @@
       </header>
       <div class="content">
       </div>
-      <footer class="footer"></footer>
+      <footer id="footer">
+        <div class="container clear-fix">
+          <div class="footer-block">
+            <div class="footer__description"><a class="logo-link" href="#"><img class="logo-img" src="static/images/general/logo-color.svg" alt=""/></a>
+              <p class="footer__description-content">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <nav class="footer__navigation"> 
+              <ul class="footer__navigation-item footer__nav-list">
+                <h3 class="footer__navigation-header">Навигация</h3>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/about">О нас</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/news">Новости</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/support">Служба поддержки</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/services">Услуги</a></li>
+              </ul>
+              <ul class="footer__navigation-item footer__about-list">  
+                <h3 class="footer__navigation-header">О нас                 </h3>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/about_service">О сервисе</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/team">Наша команда</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/career">Вакансии</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/investors">Инвесторы</a></li>
+              </ul>
+              <ul class="footer__navigation-item footer__support-list">  
+                <h3 class="footer__navigation-header">Служба поддержки                 </h3>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/conventions">Соглашения</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/community">Сообщества</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="/contact">Связь с нами</a></li>
+              </ul>
+            </nav>
+            <div class="footer__subscribe-block">
+              <h3 class="footer__navigation-header">Подписка</h3>
+              <p class="footer__subscribe-content">Получайте специальные предложения и новости сервиса</p>
+              <form class="email__subscribe-form" action="#" name="email-form" method="post">
+                <input class="email__input" type="text" name="email" placeholder="Email"/>
+                <input class="email__icon-submit" type="submit" id="before" name="submitBtn" value=""/>
+                <label class="email__icon-label" for="before" type="submit"><i class="email__icon material-icons">arrow_forward</i></label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container clear-fix">       
+          <div id="copyright-block">
+            <p class="copyright__content">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="social__block"></div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>

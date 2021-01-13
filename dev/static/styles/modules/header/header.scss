@@ -1,5 +1,5 @@
 #header {
-    box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 .header-block {
@@ -11,13 +11,13 @@
   justify-content: space-between;
 }
 
-.header__logo-link {
+#header .logo-link {
   flex-shrink: 0;
   flex-grow: 1;
 }
 
 .header__menu {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .header__menu-list {
@@ -41,9 +41,5 @@
 }
 
 .header__menu-link .material-icons {
-  vertical-align: middle;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 20px;
+  @extend %material-icons;
 }

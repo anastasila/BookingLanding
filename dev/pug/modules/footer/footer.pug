@@ -1,1 +1,27 @@
-footer.footer
+include ../menu-variables
+footer#footer
+    .container.clear-fix
+        .footer-block
+            .footer__description
+                +logo
+                p.footer__description-content Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            nav.footer__navigation 
+                ul.footer__navigation-item.footer__nav-list
+                    h3.footer__navigation-header Навигация
+                    each item in [about, news, support, services]
+                        +menu-item("footer", item.name, item.href)(class = item.class)
+                ul.footer__navigation-item.footer__about-list   
+                    h3.footer__navigation-header О нас                 
+                    each item in [about_service, team, career, investors]
+                        +menu-item("footer", item.name, item.href)(class = item.class)
+                ul.footer__navigation-item.footer__support-list   
+                    h3.footer__navigation-header Служба поддержки                 
+                    each item in [conventions, community, contact]
+                        +menu-item("footer", item.name, item.href)(class = item.class)
+            .footer__subscribe-block
+                h3.footer__navigation-header Подписка
+                p.footer__subscribe-content Получайте специальные предложения и новости сервиса
+                +subscribtion-form
+    hr
+    include copyright
+            
