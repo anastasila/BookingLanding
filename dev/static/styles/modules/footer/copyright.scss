@@ -1,0 +1,26 @@
+#copyright-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+    align-items: center;
+}
+
+.copyright__content {
+    color: $text-color;
+}
+
+.social__block p {
+  display: flex;
+  align-items: center;
+}
+.social-icons-link {
+    font-size: 1.5rem;
+}
+
+.social-icons {
+  cursor: pointer;
+  background: -webkit-linear-gradient(#bc9cff, #8ba4f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 20px;  
+}
