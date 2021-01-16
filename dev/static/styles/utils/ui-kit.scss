@@ -1,39 +1,43 @@
 #ui-kit {
-    position: relative;
+  position: relative;
+}
+
+#ui-kit.wrapper {
+    height: auto;
 }
 
 #ui-kit:before {
-    content: "";
-    background-color: $ui-background;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
+  content: "";
+  background-color: $ui-background;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
 }
 
 .grey-logo-ui {
-    height: 140px;
+  height: 140px;
 }
 
 .logo-ui {
-    width: 48px;
-    margin: 30px;
+  width: 48px;
+  margin: 30px;
 }
 
 #ui-kit #header {
-    position: relative;
-    margin-bottom: 40px;    
+  position: relative;
+  margin-bottom: 40px;
 }
 
 #ui-kit #header:before {
-    content: "";
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
 }

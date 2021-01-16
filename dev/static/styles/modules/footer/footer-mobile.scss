@@ -1,0 +1,17 @@
+.footer-mobile {
+  width: 768px;
+  height: 367px;
+  margin: 40px auto 140px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 40px;
+  box-shadow: $shadow;
+
+}
+
+.footer-mobile .copyright__content {
+    margin: 20px 0;
+}

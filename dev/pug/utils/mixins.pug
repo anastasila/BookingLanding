@@ -8,10 +8,6 @@ mixin icon(name,mod)
 		svg(class="svg-sprite-icon icon-" + name)
 			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
 
-//- mixin menu-item(title)
-//- 	li.header__menu-item
-//- 		a.header__menu-link(href="#")&attributes(attributes)= title
-
 mixin menu-item(head, title, href)
 	li(class= head + "__menu-item")
 		a(class = head + "__menu-link" href= href)&attributes(attributes)= title
@@ -21,3 +17,12 @@ mixin menu-item(head, title, href)
 mixin logo
 	a.logo-link(href="#")
 		img.logo-img(src="static/images/general/logo-color.svg", alt="")
+
+mixin social-icons
+	+social-icon("https://twitter.com/", "fa-twitter")
+	+social-icon("https://facebook.com/", "fa-facebook-square")
+	+social-icon("https://instagram.com/", "fa-instagram")
+
+mixin social-icon(href, icon)
+	a.social-icons-link(href= href)
+		i.social-icons.fa(class= icon)
