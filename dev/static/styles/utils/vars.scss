@@ -1,0 +1,50 @@
+// Colors
+$title-color: #1F2041;
+$text-color: rgba(31, 32, 65, 0.75);
+$light-tc: rgba(31, 32, 65, 0.5);
+$super-light-tc:  rgba(31, 32, 65, 0.25);
+$light-bg-color: rgba(31, 32, 65, 0.05);
+$line-color: rgba(31, 32, 65, 0.1);
+$primary-color: #BC9CFF;
+$accent-green: #6FCF97;
+$ui-background: #F4F4F6;
+$primary-gradient: linear-gradient(#bc9cff, #8ba4f9);
+
+$shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  1920px : 1620px,
+  1440px : 1160px,
+  1248px : 988px,
+  1024px : 894px,
+  768px : 618px,
+  576px: 456px,
+  320px: none
+);
+
+// $breakpoints: (
+//   "xs-phone"    : 320px,
+//   "phone"       : 400px,
+//   "phone-wide"  : 480px,
+//   "phablet"     : 560px,
+//   "tablet-small": 640px,
+//   "tablet"      : 768px,
+//   "tablet-wide" : 1024px,
+//   "desktop"     : 1248px,
+//   "desktop-wide": 1440px
+// );
+
+$content-size: 1920px;
+
+// Fonts
+$bold: "Montserrat-Bold", sans-serif;
+$regular: "Montserrat-Regular", sans-serif;
+
+%title {
+  font-family: $bold;
+  color: $title-color;
+}
+

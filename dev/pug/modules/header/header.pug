@@ -1,0 +1,17 @@
+header#header
+    .container.clearfix
+        .header-block
+            +logo
+            nav.header__menu
+                ul.header__menu-list
+                    include ../../utils/menu-variables
+                    - about.class = 'menu-link-accent'
+                    - services.class = 'menu-link-list'
+                    - conventions.class = 'menu-link-list'
+                    each item in [about, services, career, news, conventions]
+                        +menu-item("header", item.name, item.href)(class = item.class)
+            block user-login
+                .header__login-section
+                    button#white-btn(name="enter-button") Войти
+                    button#gradient-btn(name="reg-button") Зарегистрироваться
+                

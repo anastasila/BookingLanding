@@ -1,0 +1,28 @@
+include form-elements
+
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-sprite-icon icon-" + name)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+mixin menu-item(head, title, href)
+	li(class= head + "__menu-item")
+		a(class = head + "__menu-link" href= href)&attributes(attributes)= title
+			if(attributes.class == "menu-link-list")
+				i.material-icons expand_more
+
+mixin logo
+	a.logo-link(href="#")
+		img.logo-img(src="static/images/general/logo-color.svg", alt="")
+
+mixin social-icons
+	+social-icon("https://twitter.com/", "fa-twitter")
+	+social-icon("https://facebook.com/", "fa-facebook-square")
+	+social-icon("https://instagram.com/", "fa-instagram")
+
+mixin social-icon(href, icon)
+	a.social-icons-link(href= href)
+		i.social-icons.fa(class= icon)
