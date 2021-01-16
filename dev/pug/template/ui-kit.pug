@@ -1,0 +1,21 @@
+include ../utils/scripts
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+		+scripts
+	body
+		#ui-kit.wrapper
+			.grey-logo-ui
+				img.logo-ui(src="static/images/general/logo.svg", alt="")
+			block content

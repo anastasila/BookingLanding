@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  max-width: $content-size;
+//   padding: 0 7.8%;
+}
+
+@each $size, $width in $breakpoints {
+  @media screen and (max-width: $size) {
+    .container {
+        // max-width: $width;
+        max-width: 80%;
+    }
+  }
+}
