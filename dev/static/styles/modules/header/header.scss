@@ -43,3 +43,8 @@
 .header__menu-link .material-icons {
   @extend %material-icons;
 }
+
+.header__login-section {
+  display: flex;
+  align-items: center;
+}

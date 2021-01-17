@@ -1,7 +1,13 @@
 .vl {
-    border-left: 1.5px solid $line-color;
-    height: 30px;
+    border-left: $vl;
     margin-right: 20px;
+    @extend %vl;
+}
+
+.vl-mobile {
+    @extend %vl;
+    border-right: $vl;
+    margin-left: 20px;
 }
 
 .user-name {

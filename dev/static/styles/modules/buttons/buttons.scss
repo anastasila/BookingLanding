@@ -20,6 +20,7 @@ button:hover {
   background: #fff;
   background-clip: padding-box;
   border: solid $border transparent;
+  margin-right: 20px;
 
   &:before {
     content: "";

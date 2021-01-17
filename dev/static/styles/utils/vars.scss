@@ -12,6 +12,11 @@ $primary-gradient: linear-gradient(#bc9cff, #8ba4f9);
 
 $shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
+$vl: 1.5px solid $line-color;
+%vl {
+  height: 30px;
+}
+
 // Sizes
 $base-font-size: 16px;
 
@@ -47,4 +52,5 @@ $regular: "Montserrat-Regular", sans-serif;
   font-family: $bold;
   color: $title-color;
 }
+
 

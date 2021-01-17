@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/font-styles.scss";
+@import "utils/media.scss";
 
 html {
   font-size: $base-font-size;
@@ -118,5 +119,3 @@ button {
 
 //Модули
 @import "modules/modules";
-
-@import "utils/media.scss";

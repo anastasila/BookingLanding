@@ -1,0 +1,7 @@
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 80%;
+    }
+
+    @include menu-desk;
+}
