@@ -4,4 +4,8 @@
     }
 
     @include menu-mobile;
+
+    .footer__subscribe-block, .footer__description-content {
+        display: none;
+    }
   }

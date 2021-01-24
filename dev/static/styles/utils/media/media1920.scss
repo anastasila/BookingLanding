@@ -4,4 +4,8 @@
     }
 
     @include menu-desk;
+
+    .footer-mobile {
+        display: none;
+    }
 }

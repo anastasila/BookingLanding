@@ -3,9 +3,9 @@
   max-width: $content-size;
 }
 
-.footer-mobile {
-  display: none !important;
-}
+// #footer-mobile-ui {
+//   display: flex !important;
+// }
 
 // @each $size, $width in $breakpoints {
 //   @media screen and (max-width: $size) {
@@ -46,7 +46,6 @@
     display: flex;
     align-items: center;
   }
-  
 }
 
 @mixin nav-hide {
@@ -57,24 +56,52 @@
 
 @mixin header-btns-hide {
   #white-btn {
-        display: none;
-    }
+    display: none;
+  }
 
-    #gradient-btn {
-        display: none;
-    }
+  #gradient-btn {
+    display: none;
+  }
 }
 
 @mixin login-hide {
   .user-name {
-        display: none;
-    }
+    display: none;
+  }
 
-    .vl-mobile {
-        display: none;
-    }
+  .vl-mobile {
+    display: none;
+  }
 }
 
+@mixin footer-mobile {
+  .footer__description-content, 
+  .footer__menu-item,
+  .footer__subscribe-block {
+    display: none;
+  }
+  .footer-block {
+    padding: 5% 0;
+  }
+
+  .footer__navigation-header {
+    margin-bottom: 0;
+  }
+
+  .footer-block, .footer__navigation {
+    align-items: center;
+  }
+
+  .footer__description {
+    // flex-basis: calc(100% / 4);
+    padding-right: 0;
+  }
+
+  .footer__navigation-item {
+    width: auto;
+  }
+}
+@include menu-desk;
 @import "media/media1920.scss";
 @import "media/media1440.scss";
 @import "media/media1248.scss";

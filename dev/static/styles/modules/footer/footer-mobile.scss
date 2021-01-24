@@ -1,17 +1,25 @@
-.footer-mobile {
+.footer-mobile, #footer-mobile-ui {
   width: 768px;
+  max-width: 100%;
   height: 367px;
+  max-height: 20%;
   margin: 40px auto 140px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  margin-top: 40px;
   box-shadow: $shadow;
+}
 
+.copyright__content {
+  text-align: center;
 }
 
 .footer-mobile .copyright__content {
-    margin: 20px 0;
+  margin: 20px 20px;
+}
+
+#footer-mobile-ui .copyright__content {
+  margin: 20px 20px;
 }

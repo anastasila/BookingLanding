@@ -5,4 +5,15 @@
     @include menu-mobile;
     @include header-btns-hide;
     @include login-hide;
+    #footer {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
+        height: 250px;
+    }
+
+    #footer-mobile-ui {
+        display: none;
+    }
   }
